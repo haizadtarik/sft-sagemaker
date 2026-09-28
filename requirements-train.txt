@@ -1,0 +1,8 @@
+# Installed inside the SageMaker training job on top of the PyTorch DLC (torch 2.8).
+# Also needed locally for `--local` runs (plus torch).
+sagemaker==2.257.6
+trl==1.14.0
+transformers==5.17.0
+datasets==5.0.1
+accelerate==1.15.0
+peft==0.21.0
