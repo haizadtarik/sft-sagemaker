@@ -56,7 +56,7 @@ run "without_hf_token" {
   }
 
   assert {
-    condition = yamldecode(local_file.sagemaker_config.content).SageMaker.PythonSDK.Modules.RemoteFunction.S3RootUri == "s3://sft-sagemaker-123456789012-us-east-1/remote-function"
+    condition     = yamldecode(local_file.sagemaker_config.content).SageMaker.PythonSDK.Modules.RemoteFunction.S3RootUri == "s3://sft-sagemaker-123456789012-us-east-1/remote-function"
     error_message = "unexpected S3RootUri"
   }
 }
